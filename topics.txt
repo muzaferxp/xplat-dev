@@ -1,0 +1,17 @@
+#1  introduction to fullstack
+#2  introduction to html
+#3  Getting started with html
+        1. structure of html document
+        2. tags
+        3. headings
+        4. arrtibutes
+        5. forms
+        6. table
+        7. li, ul
+
+
+
+
+
+#notes:  
+#1 self closing tags are: img, input, br
