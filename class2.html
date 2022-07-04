@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+
+        <hr>
+
+        <center><h1>HTML HEADINGS</h1></center>
+
+        <hr>
+          
+        <h1>This is heading h1</h1>
+        <h2>This is heading h2</h2>
+        <h3>This is heading h3</h3>
+        <h4>This is heading h4</h4>
+        <h5>This is heading h5</h5>
+        <h6>This is heading h6</h6>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam aliquam in asperiores earum recusandae velit mollitia eius aspernatur porro similique saepe, illo excepturi quidem ex. Inventore dolore dolor deserunt?</p>
+         
+        <br>
+
+        <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, at dolorem nemo aperiam architecto quam, ipsam culpa et officia est magnam inventore, non quaerat. Quaerat ad officia accusamus ducimus quibusdam.</small>
+
+
+        <p>If you dont have account, <span style="color: blue;">please register</span></p>
+        
+        <hr>
+
+        <center><h1>HTML FORMS</h1></center>
+
+        <hr>
+
+        <center>
+            <form>
+                <input type="text" placeholder="Enter username">      <br> <br>
+                <input id="password_input" type="password" placeholder="Enter password"> 
+                <button type="button" onclick="ShowPassword()">View Password</button>
+                <!-- <button type="button" onclick="HidePassword()">Hide Password</button> -->
+
+                <br> <br>
+
+                <input type="number" placeholder="Enter age">         <br><br>
+                <input type="date" >    <br><br> 
+                <input type="time" >    <br><br>
+               
+                <label><input type="checkbox"> Python</label>
+                <label><input type="checkbox"> Html</label>
+                <label><input type="checkbox"> Css</label>
+                <label><input type="checkbox"> Javascript</label>
+                <label><input type="checkbox"> Mysql</label>
+
+
+                <br><br>
+
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+
+                <br> <br>
+
+                <input type="color" >
+
+                <br> <br>
+
+                <input type="email" placeholder="enter email">
+
+                <br> <br>
+
+                <input type="file">
+                
+                <br> <br>
+
+                <input type="tel">
+
+                <br> <br>
+
+                <input type="week">
+
+                <br> <br>
+
+                <input type="datetime-local">
+
+
+                <hr>
+                
+
+                <label>Select in which year of graduation you are?</label><br>
+                <select>
+                    <option>1st year</option>
+                    <option>2nd year</option>
+                    <option>3rd year</option>
+                    <option>4th year</option>
+                </select>
+
+                <br> <br>
+
+                <input list="cities" placeholder="Enter city">
+
+                <datalist id="cities">
+                    <option value="Hyderabad">
+                    <option value="Mumbai">
+                    <option value="Delhi">
+                </datalist>
+
+
+                <input type="submit">
+               
+                
+            </form>
+        </center>
+
+
+        <br><br><br>
+        <br><br><br>
+        <br><br><br> 
+
+
+
+        <script>
+
+            var isPasswordVisible = false;
+            function ShowPassword(){
+                if(isPasswordVisible == false){
+                    
+                    document.getElementById("password_input").type = "text"
+
+                    isPasswordVisible = true;
+
+                }else{
+
+                    document.getElementById("password_input").type = "password"
+
+
+                    isPasswordVisible = false;
+
+                }
+            }
+
+            function HidePassword(){
+                document.getElementById("password_input").type = "password"
+           }
+        </script>
+        
+    </body>
+</html>
